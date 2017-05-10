@@ -28,6 +28,7 @@ import sys
 import os
 import __main__ as main
 import argparse
+import ast
 
 import sys
 import pandas as pd
@@ -144,7 +145,7 @@ for index,row in sv_df_full.iterrows():
         region_bcs.append(region_bc_list)
     
     # Make list of SV-specific barcodes
-    bc_list = (row['bc_overlap_id']).split(',') 
+    bc_list = ast.literal_eval(row['bc_overlap_id'])
     
     # For each SV-specific barcode, count the number of times it occurs in each region
     for bc in bc_list:
