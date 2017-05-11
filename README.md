@@ -61,8 +61,17 @@ Output:
 
 ######################################################################################
 IF YOU HAPPEN TO HAVE ALL THE REQUIRED INPUTS...:
-filt_svs.py: This script annotates the structural variant output of longranger (10X Genomics)
+filt_svs.py: This script annotates the structural variant output of longranger (10X Genomics) - i.e. determines if a call is somatic, intersects the call with LumPy and BICseq calls, and intersects the call with the genomic locations of genes of interest (for ex: driver genes)
 
+Input:
+- File of structural variants called by Long Ranger for tumor sample (bedpe)
+- File of structural variants called by Long Ranger for normal sample (bedpe)
+- File of SVs called by LumPY (VCF)
+- File of CNVs called by BICseq (bed)
+- File of genes of interest (bed)
+
+Output:
+- *.som.lmpy.bic.genes.bedpe
 
   
 
