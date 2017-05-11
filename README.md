@@ -24,7 +24,7 @@ Output:
   - for each breakpoint, all assiated phase_ids are reported (i.e. within specified window) along with the barcode SNV overlap 
   for haplotype 1 and haplotype 2
   
-############################################################################################################################
+######################################################################################
 NEXT SCRIPT TO RUN:
 count_bcs_in_windows.py: This script counts the number of unique barcodes in windows around the SV breakpoints
 
@@ -44,7 +44,7 @@ Output:
   SV-specific barcode for the SV; the cells contain either a '1' indicating that a read with that barcode mapped in that 
   window or a '0' indicating that it did not
 
-############################################################################################################################
+######################################################################################
 TO PLOT THE OUTPUT OF THE ABOVE SCRIPTS:
 plot_bcs_across_bkpts.R: This script plots the location of reads with HMW barcodes (using output of: count_bcs_in_windows.py)
 
@@ -59,7 +59,7 @@ The first column contains the names of all the barcodes that could be assigned t
 Output:
 - *_bkpt_region.pdf: a pdf of a plot where each SV-specific molecule is mapped across the breakpoints 
 
-############################################################################################################################
+######################################################################################
 IF YOU HAPPEN TO HAVE ALL THE REQUIRED INPUTS...:
 filt_svs.py: This script annotates the structural variant output of longranger (10X Genomics)
 
