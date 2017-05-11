@@ -3,7 +3,7 @@ This repository contains scripts to phase SVs using linked read WGS data from th
 
 For all of the scripts, please see the import packages section for package dependencies. 
 
-############################################################################################################################
+###################################################################################
 FIRST SCRIPT TO RUN:
 phase_svs.py: This script phases the structural variant output of longranger (10X Genomics)
 
